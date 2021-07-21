@@ -7,7 +7,7 @@ class NewsController{
   Future<News> getNews() async{
     var news;
     try{
-      var response =await http.get(Uri.parse('https://newsapi.org/v2/everything?q=tesla&from=2021-06-21&sortBy=publishedAt&apiKey=543b0862aae14026994402c20e08b9bb'));
+      var response =await http.get(Uri.parse('your API'));
 
     if(response.statusCode==200){
       var jsonData=json.decode(response.body);
